@@ -1,6 +1,7 @@
 import { GitService } from "../gits/git.service";
 import { Component, OnInit } from "@angular/core";
 import { User } from "../user";
+import { HttpClient } from '@angular/common/http'
 
 @Component({
   selector: "app-profile",
