@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GitComponent } from './profile/profile.component';
 import { ProfileFormComponent } from './profile-form/profile-form.component';
-
+import {AlertsService} from './alert-service/alerts.service'
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +17,7 @@ import { ProfileFormComponent } from './profile-form/profile-form.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AlertsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
