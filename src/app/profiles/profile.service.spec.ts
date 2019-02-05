@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { GitService } from './git.service';
+import { ProfileService } from './profile.service';
 
-describe('GitService', () => {
+describe('ProfileService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: GitService = TestBed.get(GitService);
+    const service: ProfileService = TestBed.get(ProfileService);
     expect(service).toBeTruthy();
   });
 });

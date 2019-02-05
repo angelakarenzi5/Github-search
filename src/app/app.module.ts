@@ -1,21 +1,28 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {  HttpClientModule }  from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GitComponent } from './profile/profile.component';
-import { ProfileFormComponent } from './profile-form/profile-form.component';
+import { GitComponent, ProfileComponent } from './profile/profile.component';
+import { FormComponent } from './form/form.component';
 import {AlertsService} from './alert-service/alerts.service'
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpModule } from '@ngx-progressbar/http';
+
 @NgModule({
   declarations: [
     AppComponent,
     GitComponent,
-    ProfileFormComponent
+    FormComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgProgressModule.forRoot(),// normal progress bar
+    NgProgressHttpModule // progress bar to load http requests
   ],
   providers: [AlertsService],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
 export class User {
-    constructor(public user:string,public author:string){}
+    constructor(public username:string){}
 }
 

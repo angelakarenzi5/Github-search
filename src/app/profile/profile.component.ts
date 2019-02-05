@@ -1,37 +1,18 @@
-import { GitService } from "../gits/git.service";
-import { Component, OnInit } from "@angular/core";
-import { User } from "../user-class/user";
-import {HttpClient} from '@angular/common/http';
-
-
+import { Component, OnInit } from '@angular/core';
+import {ProfileService} from '../profiles/profile.service';
 @Component({
-  selector: "app-profile",
-  templateUrl: "./profile.component.html",
-  providers: [GitService], //add the providers to the component
-  styleUrls: ["./git.component.css"]
+  selector: 'app-profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css']
 })
-export class GitComponent implements OnInit {
-  user:User;
+export class ProfileComponent implements OnInit {
 
-  gits: any;
 
-  constructor(gitService:GitService,alertService:AlertsService,private http:HttpClient) {
-    this.gits = gitService.getGits();
-    this.alertService = alertService;
-     }
-     ngOnInit() {
-
-      interface ApiResponse{
-        user:string;
-        author:string
-      }
-      this.http.get<ApiResponse>("https://talaikis.com/api/quotes/random/").subscribe(data=>{
-        this.user= new User(data.user,data.author)
-
-    },err=>{
-        this.user= new User("Never, never, never give up.","winston churchill")
-        console.log("Error occured ")
-    })
+  profiles:Profile[];
+  constructor(profileService:ProfileService) {
+  this.profiles = profileService.getProfiles()
+   }
+  ngOnInit() {
   }
 
 }
