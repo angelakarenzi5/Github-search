@@ -16,7 +16,7 @@ export class GithubService {
   items;
   constructor(private http: HttpClient) {
     console.log("service is now ready!");
-    this.username = "kayitesijackie";
+    this.username = "Anaissimpz";
     this.user = new User(" ", " ", " ", " ", " ", " ", 0, 0, 0);
     this.repository = new Repository(" ", " ", " ", " ", " ");
   }
@@ -43,7 +43,7 @@ export class GithubService {
           this.user.avatar_url = profile.avatar_url;
           this.user.email = profile.email;
           this.user.location = profile.location;
-          this.user.public_repos = profile.public_repos;
+          this.user.public_repository = profile.public_repos;
           this.user.html_url = profile.html_url;
           this.user.followers = profile.followers;
           this.user.following = profile.following;
