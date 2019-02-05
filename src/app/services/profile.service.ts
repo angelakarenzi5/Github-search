@@ -54,7 +54,7 @@ export class ProfileService {
     });
     return promise;
   }
-  getRepoInfo(username) {
+  getRepositoryInfo(username) {
     interface ApiResponse {
       name: string;
       homepage: string;

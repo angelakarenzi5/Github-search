@@ -1,4 +1,15 @@
-<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+
+<h1>Github Search</h1>
+<div class="container">
+  <form (ngSubmit)='submitForm()' #userForm='ngForm'>
+    <input type="text" id="name" [(ngModel)]="newUser.name" name="name" name="#ngModel" required>
+    <button>Search</button>
+  </form>
+</div>
+
+
+
+<!-- <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
   <div class="row pull-xs-right">
       <div class="col-md-3 hidden-md-down">
           <a class="navbar-brand" href="#">Github Search Profile</a>
@@ -8,7 +19,7 @@
           <form id="searchForm">
               <!-- ngNoForm -->
 
-              <div class="form-group">
+              <!-- <div class="form-group">
 
                   <div class="input-group">
                       <input type="text" name="username" class="form-control" placeholder="Enter A Github Username..." (keyup)='submitSearch($event)'>
@@ -17,9 +28,9 @@
               </div>
 
 
-          </form>
+          </form> --> -->
 
-      </div>
+      <!-- </div>
       <div class="col-md-3">
           <nav class="nav navbar-nav  pull-xs-right">
               <li class="nav-item">
@@ -33,4 +44,4 @@
           </nav>
       </div>
   </div>
-  </nav>
+  </nav> -->

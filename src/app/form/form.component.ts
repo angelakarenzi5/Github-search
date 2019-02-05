@@ -2,11 +2,11 @@ import { Component, OnInit } from "@angular/core";
 import { ProfileService } from "../services/profile.service";
 
 @Component({
-  selector: "app-search-form",
-  templateUrl: "./search-form.component.html",
-  styleUrls: ["./search-form.component.css"]
+  selector: "app-form",
+  templateUrl: "./form.component.html",
+  styleUrls: ["./form.component.css"]
 })
-export class SearchFormComponent implements OnInit {
+export class FormComponent implements OnInit {
   submitSearch(name) {
     this.profileService.getProfileInfo(name.target.value);
     this.repositoryService.getRepositoryInfo(name.target.value);
