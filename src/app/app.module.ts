@@ -6,6 +6,7 @@ import { FormComponent } from "./form/form.component";
 import { AppComponent } from "./app.component";
 import { ProfileComponent } from "./profile/profile.component";
 // import { FormComponent } from "./form/form";
+import { FormsModule }   from '@angular/forms';
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import { ProfileComponent } from "./profile/profile.component";
     ProfileComponent,
     FormComponent
   ],
-  imports: [BrowserModule, HttpClientModule],
+  imports: [BrowserModule, HttpClientModule, FormsModule],
   providers: [ProfileService],
   bootstrap: [AppComponent]
 })
