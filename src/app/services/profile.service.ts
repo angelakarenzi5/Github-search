@@ -8,7 +8,7 @@ import { NumberSymbol } from "@angular/common";
 @Injectable({
   providedIn: "root" //we declare that this service should be created by the root application injector.
 })
-export class GithubService {
+export class ProfileService {
   repository: Repository;
   user: User;
 
@@ -63,7 +63,7 @@ export class GithubService {
       clone_url: string;
     }
     this.http
-      .get<ApiResponse>(environment.apiUrl + username + environment.apiRepokey)
+      .get<ApiResponse>(environment.apiUrl + username + environment.apiRepositorykey)
       .subscribe(response => {
         this.items = response;
       });
