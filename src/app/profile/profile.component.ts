@@ -1,22 +1,24 @@
-import { Component, OnInit } from '@angular/core';
-import {ProfileService} from '../services/profile.service';
-import {AlertsService} from '../alert-service/alerts.service';
-import {HttpClient} from '@angular/common/http'
-import {User} from '../user-class/user'
+import { Component, OnInit } from "@angular/core";
+
+import { User } from "../user-class/user";
+import { ProfileService } from "../services/profile.service";
+
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  providers:[ProfileService], 
-  styleUrls: ['./profile.component.css']
+  selector: "app-profile",
+  templateUrl: "./profile.component.html",
+  styleUrls: ["./profile.component.css"],
+  providers: [ProfileService]
 })
 export class ProfileComponent implements OnInit {
+  user: User;
 
-  profiles:any[];
-  alertService:AlertsService;
-  constructor(profileService:ProfileService) {
-  this.profiles = profileService.getProfiles()
-   }   
-  ngOnInit() {
+  constructor(
+    private profileService: ProfileService,
+    public repoService: ProfileService
+  ) {
+    this.user = this.profileService.user;
   }
-
+  ngOnInit() {
+    this.user = this.profileService.user;
+  }
 }
