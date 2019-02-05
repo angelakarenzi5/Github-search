@@ -1,4 +1,3 @@
 export class User {
-    constructor(public username:string){}
+  constructor(public username: string) {}
 }
-
