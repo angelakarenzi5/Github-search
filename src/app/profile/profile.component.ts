@@ -11,7 +11,7 @@ import {User} from '../user-class/user'
 })
 export class ProfileComponent implements OnInit {
 
-  profiles:Profile[];
+  profiles:any[];
   alertService:AlertsService;
   constructor(profileService:ProfileService) {
   this.profiles = profileService.getProfiles()
