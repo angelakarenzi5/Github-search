@@ -1,20 +1,20 @@
 import { Component, OnInit } from "@angular/core";
 
 import { User } from "../user-class/user";
-import { ProfileService } from "../services/profile.service";
+import { GitService } from "../gits/git.service";
 
 @Component({
   selector: "app-profile",
   templateUrl: "./profile.component.html",
   styleUrls: ["./profile.component.css"],
-  providers: [ProfileService]
+  providers: [GitService]
 })
 export class ProfileComponent implements OnInit {
   user: User;
 
   constructor(
-    private profileService: ProfileService,
-    public repoService: ProfileService
+    private profileService: GitService,
+    public repoService: GitService
   ) {
     this.user = this.profileService.user;
   }

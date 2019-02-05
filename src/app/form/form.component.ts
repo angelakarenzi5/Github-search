@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { ProfileService } from "../services/profile.service";
+import { GitService } from "../gits/git.service";
 
 @Component({
   selector: "app-form",
@@ -8,15 +8,12 @@ import { ProfileService } from "../services/profile.service";
 })
 export class FormComponent implements OnInit {
   submitSearch(name) {
-    this.profileService.getProfileInfo(name.target.value);
-    this.repositoryService.getRepositoryInfo(name.target.value);
-    this.profileService.getProfileInfo(name.target.value);
-    this.profileService.getProfileInfo(name.target.value);
-    this.profileService.getProfileInfo(name.target.value);
+   this.gitService.getProfileInfo(name.target.value);
+   this.repositoryService.getRepoInfo(name.target.value);
   }
   constructor(
-    private profileService: ProfileService,
-    private repositoryService: ProfileService
+    private gitService: GitService,
+    private repositoryService: GitService
   ) {}
   ngOnInit() {}
 }
