@@ -7,7 +7,14 @@ import { GitService } from "../gits/git.service";
   styleUrls: ["./form.component.css"]
 })
 export class FormComponent implements OnInit {
-  submitSearch(name) {
+    user={
+        user: ""
+    }
+
+    onKey(event:any) {
+        this.user += event.target.value;
+    }
+      submitSearch(name) {
    this.gitService.getProfileInfo(name.target.value);
    this.repositoryService.getRepoInfo(name.target.value);
   }
