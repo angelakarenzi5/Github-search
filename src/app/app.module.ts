@@ -1,7 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { HttpClientModule } from "@angular/common/http";
-import { ProfileService } from "./services/profile.service";
+import { GitService } from "./gits/git.service";
 import { FormComponent } from "./form/form.component";
 import { AppComponent } from "./app.component";
 import { ProfileComponent } from "./profile/profile.component";
@@ -16,7 +16,7 @@ import { FormsModule }   from '@angular/forms';
     FormComponent
   ],
   imports: [BrowserModule, HttpClientModule, FormsModule],
-  providers: [ProfileService],
+  providers: [GitService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

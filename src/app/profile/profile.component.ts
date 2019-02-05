@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 
-import { User } from "../user-class/user";
+import { User } from "../user";
 import { GitService } from "../gits/git.service";
 
 @Component({
