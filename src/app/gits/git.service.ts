@@ -37,7 +37,7 @@ export class GitService {
         .get<ApiResponse>(
           "https://api.github.com/users/" +
             username +
-            "?access_token=e444fb7d0ebdc985ab037929185ff133b6a699f5"
+            "?access_token=b22cd97d43ef60a9fdfc6c4b395c14b11d7ac407"
         )
         .toPromise()
         .then(profile => {
