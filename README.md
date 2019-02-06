@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
+## Support and Contanct details
+ For any questions, concerns, contact me on:
+  -Tel: +250787889107
+  -Email:angelakarenzi5@gmail.com
+
+License
+ Copyright(c)
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
