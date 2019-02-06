@@ -7,12 +7,14 @@ import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FormComponent } from './form/form.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     FormComponent,
+    DateCountPipe,
   ],
   imports: [
     BrowserModule,
