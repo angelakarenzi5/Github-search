@@ -9,7 +9,7 @@ Gits is a web application that searches for a github username and it's repositor
 
 ## Setup/Installation Requirements
 
-There are no installation requirements needed , with your web browser you can be able to access this site:
+There are no installation requirements needed , with your web browser you can be able to access this site:https://angelakarenzi5.github.io/Github-search/
 
 ## Known Bugs
  
