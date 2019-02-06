@@ -18,7 +18,7 @@ export class GitService {
   constructor(private http:HttpClient) { 
     console.log ("service is now ready!");
     this.username = 'Anaissimpz';
-    this.user = new User (' ',' ',' ',' ',' ',0,' ');
+    this.user = new User (' ',' ',' ',' ',' ',0,' ', ' ');
     this.repository = new Repository (' ', ' ', ' ', ' ', ' ');
   }
   getProfileInfo(username){
@@ -30,12 +30,13 @@ export class GitService {
       location: string;
       public_repos: number;
       html_url: string;
+
     // return this.http.get("https://api.github.com/users/" + this.username)
 
   }
   const promise = new Promise((resolve, reject) => {
     this.http.get<ApiResponse>(environment.apiUrl + username + environment.apikey).toPromise().then(profile => {
-         this.user.name = profile.name;
+        this.user.name = profile.name;
         this.user.login = profile.login;
         this.user.avatar_url = profile.avatar_url;
         this.user.email = profile.email;

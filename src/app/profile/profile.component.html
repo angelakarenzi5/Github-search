@@ -17,6 +17,10 @@
           <td >Repositories: </td>
           <td class="label">{{user.public_repos}}</td>
         </tr>
+        <tr>
+          <td >Created _at: </td>
+          <td class="label">{{user.created_at|dateCount}}</td>
+        </tr>
         </table>
     </div>
   </div>

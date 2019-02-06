@@ -30,7 +30,7 @@ For any questions, concerns, contact me on:
   -Email:angelakarenzi5@gmail.com
 
 ## License
- Copyright(c) 2019 Karenzi Angela
+ Copyright(c) 2019 Karenzi Uwase Angela
 This project was generated with Angular CLI version 1.7.3
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
