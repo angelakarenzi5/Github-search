@@ -35,7 +35,7 @@ export class GitService {
 
   }
   const promise = new Promise((resolve, reject) => {
-    this.http.get<ApiResponse>(environment.apiUrl + username + environment.apikey).toPromise().then(profile => {
+    this.http.get<ApiResponse>('https://api.github.com/users/' + username + "?access_token=e3a1f19efebed8be254463eb89ca7ab1e7739d97").toPromise().then(profile => {
         this.user.name = profile.name;
         this.user.login = profile.login;
         this.user.avatar_url = profile.avatar_url;
@@ -60,7 +60,7 @@ getRepoInfo(username) {
     html_url: string;
     clone_url: string;
 }
-this.http.get<ApiResponse>(environment.apiUrl + username + environment.apiRepokey).subscribe(response => {
+this.http.get<ApiResponse>('https://api.github.com/users/' + username + "/repos?access_token=e3a1f19efebed8be254463eb89ca7ab1e7739d97").subscribe(response => {
   
     this.items = response;  
   });
