@@ -1,28 +1,29 @@
-<div class= "container">
+<div class="container">
   <div class="jumbotron">
     <h1>GitHub Search</h1>
   </div>
   <div class="row">
     <div class="col-md-6">
       <app-profile-form></app-profile-form>
-      <a href="{{user.html_url}}" class="btn btn-success" id="view">Search</a>
+      <a href="{{ user.html_url }}" class="btn btn-success" id="view">Search</a>
     </div>
     <div class="col-md-6">
       <table>
         <tr>
-          <td >Github username: </td>
-          <td class="label">{{user.login}}</td>
+          <td>Github username:</td>
+          <td class="label">{{ user.login }}</td>
         </tr>
         <tr>
-          <td >Repositories: </td>
-          <td class="label">{{user.public_repos}}</td>
+          <td>Repositories:</td>
+          <td class="label">{{ user.public_repos }}</td>
         </tr>
         <tr>
-          <td >Created _at: </td>
-          <td class="label">{{user.created_at|dateCount}}</td>
+          <td>Created _at:</td>
+          <td class="label">{{ user.created_at | date }}</td>
         </tr>
-        </table>
+      </table>
     </div>
   </div>
-<!-- <p>This repository will be completed in {{user.completeDate|dateCount}} days</p> -->
+
+  <!-- <p>This repository will be completed in {{user.completeDate|dateCount}} days</p> -->
 </div>
