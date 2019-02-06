@@ -6,6 +6,15 @@ By Angela Uwase Karenzi
 
 ## Description
 Gits is a web application that searches for a github username and it's repositories, It displays it on the webpage, once the username is written in the form as well as the repositories of the username searched for. Additionally, once you click the search button, it takes you to Github showing you more details of the username searched for.
+
+## Setup/Installation Requirements
+
+There are no installation requirements needed , with your web browser you can be able to access this site:
+
+## Known Bugs
+ 
+There are not enough directives, no clear function of pipes.  
+
 ## Technologies Used
 -HTML
 -CSS
