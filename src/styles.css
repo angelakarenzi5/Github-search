@@ -4,4 +4,5 @@
 body {
 background-image:url('https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg');
 background-size:cover;
+background-repeat: no-repeat;
 }

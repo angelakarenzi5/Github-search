@@ -1,9 +1,11 @@
 # Gits
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
+The Gits webapp, 6/02/2019
+
+By Angela Uwase Karenzi 
 
 ## Description
-
+Gits is a web application that searches for a github username and it's repositories, It displays it on the webpage, once the username is written in the form as well as the repositories of the username searched for. Additionally, once you click the search button, it takes you to Github showing you more details of the username searched for.
 ## Technologies Used
 -HTML
 -CSS
@@ -18,10 +20,10 @@ For any questions, concerns, contact me on:
   -Tel: +250787889107
   -Email:angelakarenzi5@gmail.com
 
-License
+## License
  Copyright(c) 2019 Karenzi Angela
 This project was generated with Angular CLI version 1.7.3
-
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
 ## Development server
 
