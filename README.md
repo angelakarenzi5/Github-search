@@ -2,14 +2,25 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
+## Description
+
+## Technologies Used
+-HTML
+-CSS
+-BOOTSRAP
+-JavaScript/Typescript
+-jQuery
+-Git
+-Angular CLI
+
 ## Support and Contanct details
- For any questions, concerns, contact me on:
+For any questions, concerns, contact me on:
   -Tel: +250787889107
   -Email:angelakarenzi5@gmail.com
 
 License
- Copyright(c)
-
+ Copyright(c) 2019 Karenzi Angela
+This project was generated with Angular CLI version 1.7.3
 
 
 ## Development server
