@@ -1,6 +1,5 @@
 <form>
   <div class="form-group">
-    <input type="text" class="form-control" placeholder="Enter Github username here" [(ngModel)]="user.user" name='user'>
-  </div>
+    <input type="text" class="form-control" placeholder="Enter Github username here" (keyup)='submitSearch($event)'>
+  </div>  
 </form>
-<button type="button" (click)='submitSearch()'></button>
